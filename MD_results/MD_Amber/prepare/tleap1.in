@@ -1,0 +1,8 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+UNL = loadmol2 UNL.mol2
+check UNL
+loadamberparams UNL.frcmod
+saveoff UNL UNL.lib
+savepdb UNL UNL_amber.pdb
+quit

@@ -1,0 +1,7 @@
+parm com_solvated.prmtop
+trajin repeat03/prod.mdcrd 1 -1 1
+unwrap :1-269
+center :1-269 mass origin
+image origin center familiar
+rms first mass :1-269
+atomicfluct out repeat03_res_flucts.out :1-269 bfactor byres

@@ -1,0 +1,9 @@
+select distinct molecule_dictionary.chembl_id, target_dictionary.chembl_id, target_dictionary.pref_name, 
+   component_sequences.accession, activities.pchembl_value, activities.standard_type, assays.assay_id, 
+   assays.confidence_score, compound_structures.canonical_smiles, assays.description from target_dictionary, 
+   assays, activities, molecule_dictionary, compound_structures, target_components, 
+   component_sequences where target_dictionary.tid = assays.tid and 
+   assays.assay_id = activities.assay_id and activities.molregno = molecule_dictionary.molregno 
+   and activities.molregno = compound_structures.molregno and target_dictionary.tid = target_components.tid 
+   and target_components.component_id = component_sequences.component_id and activities.pchembl_value not NULL 
+   and component_sequences.accession="P09467";

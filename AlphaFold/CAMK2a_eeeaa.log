@@ -1,0 +1,6 @@
+num_models=5
+use_amber=True
+use_msa=True
+msa_mode=MMseqs2 (UniRef+Environmental)
+use_templates=True
+homooligomer=1

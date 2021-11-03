@@ -1,0 +1,14 @@
+equil molecular dynamic
+&cntrl
+ imin=0,irest=1,ntx=5,
+ nstlim=50000,dt=0.002,
+ ntc=2,ntf=2,
+ cut=12.0, ntb=2, pres0=1.0, ntp=1, taup=2.0,
+ ntpr=500, ntwx=500,
+ ntt=3, gamma_ln=2.0,
+ temp0=300.0,
+ ntr=0,iwrap=1,restraintmask=':1-268@CA,N,C | :269',
+ restraint_wt=0.5,
+ ioutfm=1,
+/
+

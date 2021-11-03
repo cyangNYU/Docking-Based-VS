@@ -1,0 +1,16 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+loadamberparams UNL.frcmod
+loadoff UNL.lib
+prot = loadpdb 6vzk.pqr
+LIG1 = loadmol2 UNL.mol2
+comp = combine {prot LIG1}
+charge comp
+addions2 comp Cl- 0
+addions2 comp Na+ 0
+solvatebox comp TIP3PBOX 12.0
+check comp
+saveamberparm comp com_solvated.prmtop com_solvated.inpcrd
+savepdb comp com_solvated.pdb
+quit

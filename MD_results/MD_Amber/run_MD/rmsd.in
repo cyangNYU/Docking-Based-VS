@@ -1,0 +1,9 @@
+parm com_solvated.prmtop
+trajin repeat03/prod.mdcrd 1 -1 1
+unwrap :1-269
+center :1-269 mass origin
+image origin center familiar
+reference repeat03/equil.rst
+rms reference mass out repeat03_rmsd_pro.out :1-268@CA,C,N
+rms reference mass out repeat03_rmsd_lig.out :269&!@H=
+run

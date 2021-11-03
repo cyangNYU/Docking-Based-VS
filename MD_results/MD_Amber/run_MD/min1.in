@@ -1,0 +1,10 @@
+minization protein stage 1
+&cntrl
+ imin=1,maxcyc=5000,ncyc=3000,
+ cut=10.0,ntb=1,
+ ntc=1,ntf=1,
+ ntpr=5,
+ ntr=1,restraintmask=':1-269',
+ restraint_wt=10.0,
+/
+
