@@ -1,4 +1,4 @@
-### Docking Exercise
+### Docking-Based VS Exercise
 
 #### 1. Protein structure collection and conformation analysis.
 
