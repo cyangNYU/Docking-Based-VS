@@ -1,4 +1,4 @@
-### VantAl Technical Exercise
+### Docking Exercise
 
 #### 1. Protein structure collection and conformation analysis.
 
